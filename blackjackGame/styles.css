@@ -1,0 +1,52 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background : url("./table.jpg");
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    /* Define CSS variables for colors */
+    --button-text-color: #016f32;
+    margin: 100px;
+
+} 
+
+.container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align : center;
+    justify-content: center;
+}
+
+
+h1 {
+    color: goldenrod;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+button {
+    height: 60px;
+    cursor:pointer;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border : none;
+    border-radius: 15px;
+    color : var(--button-text-color); /* Button text color */
+    box-shadow : 0 9px #999;
+    width : 250px;
+    margin: 10px;
+    background-color: goldenrod;
+}
+button:hover{
+    background-color: yellow;
+}
+
+/* active pseudo property is  for when the button is clicked */
+button:active{
+    box-shadow : 0 5px #333;
+    /* the box is pushed down as the user clicks on it */
+    transform:translateY(4px);
+}
